@@ -59,7 +59,6 @@ export function ProductDetails() {
                 </div>
               ))}
             </div>
-
             <div className="col-span-4 pt-8 lg:pt-0">
               <div className="mb-7 border-b border-gray-300 pb-7">
                 <h2 className="text-heading mb-3.5 text-lg font-bold md:text-xl lg:text-2xl 2xl:text-3xl">

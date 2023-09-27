@@ -1,18 +1,16 @@
 import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-import { Navbar } from "./Components/Navbar";
+import { Navbar } from "./Components/Navbar/Navbar";
 import { Home } from "./Pages/Home";
-import { AllProducts } from "./Pages/CategoryFilterPages/AllProducts";
+import { AllProducts } from "./Pages/AllProducts";
 import { ProductDetails } from "./Pages/ProductDetails";
 import { GuestLayout } from "./Pages/GuestLayout";
 import { Cart } from "./Pages/Cart";
-import { SmartPhones } from "./Pages/CategoryFilterPages/SmartPhones";
-import { Fragrances } from "./Pages/CategoryFilterPages/Fragrances";
-import { Laptops } from "./Pages/CategoryFilterPages/Laptops";
 import { useDispatch } from "react-redux";
 import { fetchCartAsync } from "./Redux/Cart/CartSlice";
-import { Skincare } from "./Pages/CategoryFilterPages/Skincare";
 import { Footer } from "./Components/Footer";
+import { About } from "./Pages/About";
+import { Contact } from "./Pages/Contact";
 
 function App() {
   const dispatch = useDispatch();
@@ -25,14 +23,12 @@ function App() {
     <div>
       <Navbar />
       <Routes path="/" element={<GuestLayout />}>
-        <Route path="/smartPhones" element={<SmartPhones />} />
-        <Route path="/fragrances" element={<Fragrances />} />
-        <Route path="/laptops" element={<Laptops />} />
-        <Route path="/skincare" element={<Skincare />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/allProducts" element={<AllProducts />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/productDetails/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/allProducts" element={<AllProducts />} />
       </Routes>
       <Footer />
     </div>

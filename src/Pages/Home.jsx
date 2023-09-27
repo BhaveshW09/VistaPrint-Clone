@@ -1,41 +1,27 @@
+import { BrandedProducts } from "../Components/BrandedProducts";
+import { Swipers } from "../Components/Swiper/Swiper";
+import { MainCategory } from "../Components/MainCategory";
 import { Link } from "react-router-dom";
-import { PopularProducts } from "../Components/Category/PopularProducts";
-import { Trending } from "../Components/Category/Trending";
-import { AllNavCategory } from "../Components/AllNavCategory";
-import { BrandedProducts } from "../Components/Category/BrandedProducts";
 
 export const Home = () => {
   return (
     <>
       {/* Lists */}
-      <div className=" w-[1280px] m-auto">
-        <AllNavCategory />
+      <Link to="/home">
+        <div>
+          {/* HeroSection */}
+          <div className="flex justify-center w-full h-[600px]">
+            <Swipers />
+          </div>
 
-        {/* HeroSection */}
-        <div className="flex justify-center w-[1280px]">
-          <img
-            src="https://cms.cloudinary.vpsvc.com/image/upload/c_sc…on/IN_Visiting-Cards_Food-Truck_Mobile-Marquee_01"
-            alt=""
-          />
+          {/* Branded Products */}
+          <BrandedProducts />
+
+          {/* HeroSection 2 */}
+
+          <MainCategory />
         </div>
-
-        {/* Most Popular Product */}
-        <PopularProducts />
-
-        {/* Trending Products */}
-        <Trending />
-
-        {/* Branded Products */}
-        <BrandedProducts />
-
-        {/* HeroSection 2 */}
-
-        {/* Explore More */}
-
-        {/* New Arrival */}
-
-        {/* Explore All Categories */}
-      </div>
+      </Link>
     </>
   );
 };

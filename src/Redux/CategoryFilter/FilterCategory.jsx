@@ -1,6 +1,8 @@
 export const fetchFilterCategory = () => {
   return new Promise(async (resolve) => {
-    const response = await fetch("http://localhost:8000/products");
+    const response = await fetch(
+      "https://e-commerce-data-0ia9.onrender.com/products"
+    );
     const data = await response.json();
     resolve({ data });
   });
@@ -9,7 +11,9 @@ export const fetchFilterCategory = () => {
 // SmartPhones
 export const fetchSmartPhones = () => {
   return new Promise(async (resolve) => {
-    const response = await fetch("http://localhost:8000/products");
+    const response = await fetch(
+      "https://e-commerce-data-0ia9.onrender.com/products"
+    );
     const data = await response.json();
     resolve({ data });
   });
@@ -18,7 +22,9 @@ export const fetchSmartPhones = () => {
 // Fragrances
 export const fetchFragrances = () => {
   return new Promise(async (resolve) => {
-    const response = await fetch("http://localhost:8000/products");
+    const response = await fetch(
+      "https://e-commerce-data-0ia9.onrender.com/products"
+    );
     const data = await response.json();
     resolve({ data });
   });
@@ -27,7 +33,9 @@ export const fetchFragrances = () => {
 // Laptops
 export const fetchLaptops = () => {
   return new Promise(async (resolve) => {
-    const response = await fetch("http://localhost:8000/products");
+    const response = await fetch(
+      "https://e-commerce-data-0ia9.onrender.com/products"
+    );
     const data = await response.json();
     resolve({ data });
   });
@@ -36,7 +44,9 @@ export const fetchLaptops = () => {
 // Skincare
 export const fetchSkincare = () => {
   return new Promise(async (resolve) => {
-    const response = await fetch("http://localhost:8000/products");
+    const response = await fetch(
+      "https://e-commerce-data-0ia9.onrender.com/products"
+    );
     const data = await response.json();
     resolve({ data });
   });

@@ -54,7 +54,7 @@ export function Cart() {
             </h2>
             <ul role="list" className="divide-y divide-gray-200">
               {cart?.map((product) => (
-                <div key={product.id} className="">
+                <div key={product.id} className=" p-4">
                   <li className="flex py-6 sm:py-6 ">
                     <div className="flex-shrink-0">
                       <img
